@@ -1,0 +1,80 @@
+2025-06-12 00:24:11,707 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272'
+2025-06-12 00:24:11,707 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274'
+2025-06-12 00:24:11,707 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613272, Folder Type: projects
+2025-06-12 00:24:11,708 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277'
+2025-06-12 00:24:11,708 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613274, Folder Type: projects
+2025-06-12 00:24:11,708 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4' from 'zoom_downloads/AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4'...
+2025-06-12 00:24:11,709 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613277, Folder Type: projects
+2025-06-12 00:24:11,709 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4' from 'zoom_downloads/AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4'...
+2025-06-12 00:24:11,710 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4' from 'zoom_downloads/AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4'...
+2025-06-12 00:24:38,478 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092559906
+2025-06-12 00:24:38,970 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278'
+2025-06-12 00:24:38,970 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613278, Folder Type: projects
+2025-06-12 00:24:38,970 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4' from 'zoom_downloads/AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4'...
+2025-06-12 00:24:43,026 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092559908
+2025-06-12 00:24:43,479 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272'
+2025-06-12 00:24:43,479 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613272, Folder Type: projects
+2025-06-12 00:24:43,479 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4' from 'zoom_downloads/AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4'...
+2025-06-12 00:24:50,361 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092559914
+2025-06-12 00:24:50,807 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274'
+2025-06-12 00:24:50,807 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613274, Folder Type: projects
+2025-06-12 00:24:50,807 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4' from 'zoom_downloads/AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4'...
+2025-06-12 00:25:08,497 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092560050
+2025-06-12 00:25:08,967 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277'
+2025-06-12 00:25:08,967 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613277, Folder Type: projects
+2025-06-12 00:25:08,967 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4' from 'zoom_downloads/AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4'...
+2025-06-12 00:25:12,200 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092560065
+2025-06-12 00:25:12,691 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278'
+2025-06-12 00:25:12,691 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613278, Folder Type: projects
+2025-06-12 00:25:12,691 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4' from 'zoom_downloads/AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4'...
+2025-06-12 00:25:18,185 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092560099
+2025-06-12 00:25:18,675 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272'
+2025-06-12 00:25:18,675 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613272, Folder Type: projects
+2025-06-12 00:25:18,675 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4' from 'zoom_downloads/AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4'...
+2025-06-12 00:25:38,340 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092560185
+2025-06-12 00:25:38,824 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274'
+2025-06-12 00:25:38,824 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613274, Folder Type: projects
+2025-06-12 00:25:38,824 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4' from 'zoom_downloads/AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4'...
+2025-06-12 00:25:45,772 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092560231
+2025-06-12 00:25:46,222 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277'
+2025-06-12 00:25:46,222 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613277, Folder Type: projects
+2025-06-12 00:25:46,222 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4' from 'zoom_downloads/AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4'...
+2025-06-12 00:25:52,965 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092560204
+2025-06-12 00:25:53,432 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278'
+2025-06-12 00:25:53,432 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613278, Folder Type: projects
+2025-06-12 00:25:53,432 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4' from 'zoom_downloads/AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4'...
+2025-06-12 00:26:09,395 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092560336
+2025-06-12 00:26:09,868 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272'
+2025-06-12 00:26:09,868 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613272, Folder Type: projects
+2025-06-12 00:26:09,868 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4' from 'zoom_downloads/AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4'...
+2025-06-12 00:26:21,039 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092560380
+2025-06-12 00:26:21,490 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274'
+2025-06-12 00:26:21,490 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613274, Folder Type: projects
+2025-06-12 00:26:21,490 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4' from 'zoom_downloads/AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4'...
+2025-06-12 00:26:25,529 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092560472
+2025-06-12 00:26:25,999 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277'
+2025-06-12 00:26:25,999 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613277, Folder Type: projects
+2025-06-12 00:26:25,999 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4' from 'zoom_downloads/AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4'...
+2025-06-12 00:26:29,414 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092560411
+2025-06-12 00:26:29,864 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278'
+2025-06-12 00:26:29,864 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613278, Folder Type: projects
+2025-06-12 00:26:29,864 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4' from 'zoom_downloads/AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4'...
+2025-06-12 00:26:38,653 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092560514
+2025-06-12 00:26:39,130 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272'
+2025-06-12 00:26:39,130 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613272, Folder Type: projects
+2025-06-12 00:26:39,130 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4' from 'zoom_downloads/AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4'...
+2025-06-12 00:26:45,240 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092560534
+2025-06-12 00:26:45,766 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274'
+2025-06-12 00:26:45,766 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613274, Folder Type: projects
+2025-06-12 00:26:45,766 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4' from 'zoom_downloads/AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4'...
+2025-06-12 00:27:04,331 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092560601
+2025-06-12 00:27:04,786 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277'
+2025-06-12 00:27:04,786 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613277, Folder Type: projects
+2025-06-12 00:27:04,786 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4' from 'zoom_downloads/AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4'...
+2025-06-12 00:27:06,864 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092560564
+2025-06-12 00:27:07,363 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278'
+2025-06-12 00:27:07,363 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder ID: 25613278, Folder Type: projects
+2025-06-12 00:27:07,363 - DEBUG - Starting Vimeo upload for 'AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4' from 'zoom_downloads/AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4'...
+2025-06-12 00:27:09,054 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092560635
+2025-06-12 00:27:26,975 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092560729
+2025-06-12 00:27:32,661 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092560719

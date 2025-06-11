@@ -1,0 +1,68 @@
+2025-06-12 00:16:01,301 - INFO - Successfully downloaded Meeting ID 81487515736 to 'zoom_downloads/AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4' using account 'Account_A'.
+2025-06-12 00:16:01,812 - INFO - Successfully downloaded Meeting ID 86501695075 to 'zoom_downloads/AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4' using account 'Account_A'.
+2025-06-12 00:16:02,411 - INFO - Successfully downloaded Meeting ID 86501695075 to 'zoom_downloads/AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4' using account 'Account_A'.
+2025-06-12 00:16:02,687 - INFO - Successfully downloaded Meeting ID 85820370006 to 'zoom_downloads/AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4' using account 'Account_A'.
+2025-06-12 00:16:02,970 - INFO - Successfully downloaded Meeting ID 81994724646 to 'zoom_downloads/AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4' using account 'Account_A'.
+2025-06-12 00:16:06,646 - INFO - Successfully downloaded Meeting ID 81487515736 to 'zoom_downloads/AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4' using account 'Account_A'.
+2025-06-12 00:19:08,032 - INFO - Successfully downloaded Meeting ID 86501695075 to 'zoom_downloads/AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4' using account 'Account_A'.
+2025-06-12 00:19:08,037 - INFO - Successfully downloaded Meeting ID 86501695075 to 'zoom_downloads/AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4' using account 'Account_A'.
+2025-06-12 00:19:08,846 - INFO - Successfully downloaded Meeting ID 85820370006 to 'zoom_downloads/AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4' using account 'Account_A'.
+2025-06-12 00:19:09,109 - INFO - Successfully downloaded Meeting ID 81487515736 to 'zoom_downloads/AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4' using account 'Account_A'.
+2025-06-12 00:19:09,562 - INFO - Successfully downloaded Meeting ID 81994724646 to 'zoom_downloads/AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4' using account 'Account_A'.
+2025-06-12 00:19:13,083 - INFO - Successfully downloaded Meeting ID 81487515736 to 'zoom_downloads/AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4' using account 'Account_A'.
+2025-06-12 00:19:19,395 - INFO - Successfully downloaded Meeting ID 81350956788 to 'zoom_downloads/AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4' using account 'Account_A'.
+2025-06-12 00:19:19,808 - INFO - Successfully downloaded Meeting ID 88596299500 to 'zoom_downloads/AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4' using account 'Account_A'.
+2025-06-12 00:19:19,836 - INFO - Successfully downloaded Meeting ID 89508812901 to 'zoom_downloads/AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4' using account 'Account_A'.
+2025-06-12 00:19:20,906 - INFO - Successfully downloaded Meeting ID 88023724017 to 'zoom_downloads/AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4' using account 'Account_A'.
+2025-06-12 00:19:21,391 - INFO - Successfully downloaded Meeting ID 82764987537 to 'zoom_downloads/AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4' using account 'Account_A'.
+2025-06-12 00:19:25,499 - INFO - Successfully downloaded Meeting ID 88650917493 to 'zoom_downloads/AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4' using account 'Account_A'.
+2025-06-12 00:19:26,263 - INFO - Successfully downloaded Meeting ID 82658025283 to 'zoom_downloads/AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4' using account 'Account_A'.
+2025-06-12 00:19:26,854 - INFO - Successfully downloaded Meeting ID 85794973245 to 'zoom_downloads/AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4' using account 'Account_A'.
+2025-06-12 00:19:27,576 - INFO - Successfully downloaded Meeting ID 83923650744 to 'zoom_downloads/AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4' using account 'Account_A'.
+2025-06-12 00:19:29,182 - INFO - Successfully downloaded Meeting ID 85794973245 to 'zoom_downloads/AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4' using account 'Account_A'.
+2025-06-12 00:19:33,235 - INFO - Successfully downloaded Meeting ID 82780794662 to 'zoom_downloads/AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4' using account 'Account_A'.
+2025-06-12 00:19:33,507 - INFO - Successfully downloaded Meeting ID 82170751921 to 'zoom_downloads/AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4' using account 'Account_A'.
+2025-06-12 00:19:33,643 - INFO - Successfully downloaded Meeting ID 87419142190 to 'zoom_downloads/AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4' using account 'Account_A'.
+2025-06-12 00:19:33,807 - INFO - Successfully downloaded Meeting ID 86386752712 to 'zoom_downloads/AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4' using account 'Account_A'.
+2025-06-12 00:19:33,808 - INFO - Successfully updated 'meetings.csv' with download statuses.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 85820370006: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 81994724646: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 86501695075: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 81487515736: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 88596299500: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 88023724017: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 81350956788: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 89508812901: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 82764987537: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 85794973245: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 82658025283: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 88650917493: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 83923650744: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 82170751921: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 82780794662: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 86386752712: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4' exists.
+2025-06-12 00:19:57,923 - INFO - Skipping Meeting ID 87419142190: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4' exists.
+2025-06-12 00:19:57,924 - INFO - Skipping Meeting ID 86501695075: File 'zoom_downloads/AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4' already exists.
+2025-06-12 00:19:57,924 - INFO - Skipping Meeting ID 81487515736: File 'zoom_downloads/AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4' already exists.
+2025-06-12 00:19:57,924 - INFO - Skipping Meeting ID 85794973245: File 'zoom_downloads/AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4' already exists.
+2025-06-12 00:19:57,930 - INFO - Successfully updated 'meetings.csv' with download statuses.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 85820370006: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 81994724646: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 86501695075: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 81487515736: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 88596299500: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 88023724017: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 81350956788: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 89508812901: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 82764987537: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 85794973245: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 82658025283: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 88650917493: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 83923650744: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4' exists.
+2025-06-12 00:22:08,415 - INFO - Skipping Zoom download for Meeting ID 82170751921: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4' exists.
+2025-06-12 00:22:08,416 - INFO - Skipping Zoom download for Meeting ID 82780794662: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4' exists.
+2025-06-12 00:22:08,416 - INFO - Skipping Zoom download for Meeting ID 86386752712: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4' exists.
+2025-06-12 00:22:08,416 - INFO - Skipping Zoom download for Meeting ID 87419142190: Already marked 'downloaded' and file 'zoom_downloads/AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4' exists.
+2025-06-12 00:22:08,416 - INFO - Skipping Meeting ID 86501695075: File 'zoom_downloads/AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4' already exists.
+2025-06-12 00:22:08,417 - INFO - Skipping Meeting ID 81487515736: File 'zoom_downloads/AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4' already exists.
+2025-06-12 00:22:08,417 - INFO - Skipping Meeting ID 85794973245: File 'zoom_downloads/AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4' already exists.
