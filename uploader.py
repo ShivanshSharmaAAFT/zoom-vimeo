@@ -92,7 +92,7 @@ def upload_video_to_vimeo(file_path, file_name, vimeo_access_token, vimeo_folder
     try:
         video_metadata = {
             'name': file_name,
-            'privacy': {'view': 'unlisted'}
+            'privacy': {'view': 'anybody'}
         }
         
         # Callback function for progress updates - now does nothing to keep console clean

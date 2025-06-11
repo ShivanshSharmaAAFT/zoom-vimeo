@@ -10,6 +10,11 @@ import time
 from dotenv import load_dotenv
 from tqdm import tqdm
 
+# Google Sheets API imports
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -42,27 +47,62 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 CSV_FILE = "meetings.csv"
 
-SUCCESS_LOG = "success.log"
-FAILURE_LOG = "failure.log"
+# --- Google Sheets Configuration ---
+# Make sure to place your service account key JSON file in the same directory
+# or provide the full path to it.
+SERVICE_ACCOUNT_FILE = 'service_account_credentials.json'
+SPREADSHEET_ID = os.getenv("GOOGLE_SHEETS_SPREADSHEET_ID") # Get this from your .env file
+SUCCESS_SHEET_NAME = "Success Log"
+FAILURE_SHEET_NAME = "Failure Log"
 
-MAX_WORKERS = 5
+# --- Logger Setup (Modified for Google Sheets) ---
+# Initialize Google Sheets service globally or pass it around
+sheets_service = None
 
-# --- Logger Setup ---
-def setup_logger(log_file, name, level=logging.INFO):
-    """Sets up a logger to write to a specific file."""
-    handler = logging.FileHandler(log_file)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
+def initialize_sheets_service():
+    """Initializes the Google Sheets API service."""
+    global sheets_service
+    if sheets_service is None:
+        try:
+            creds = service_account.Credentials.from_service_account_file(
+                SERVICE_ACCOUNT_FILE, scopes=['https://www.googleapis.com/auth/spreadsheets']
+            )
+            sheets_service = build('sheets', 'v4', credentials=creds)
+            print("Google Sheets service initialized successfully.")
+            return True
+        except Exception as e:
+            print(f"Error initializing Google Sheets service: {e}")
+            print(f"Please ensure '{SERVICE_ACCOUNT_FILE}' exists and is valid.")
+            return False
+    return True # Service already initialized
 
-    logger = logging.getLogger(name)
-    logger.setLevel(level)
-    logger.addHandler(handler)
-    return logger
+def log_to_google_sheet(sheet_name, data):
+    """Appends a row of data to the specified Google Sheet."""
+    if not sheets_service:
+        print("Google Sheets service not initialized. Cannot log.")
+        return
 
-success_logger = setup_logger(SUCCESS_LOG, "success_logger")
-failure_logger = setup_logger(FAILURE_LOG, "failure_logger")
+    range_name = f"'{sheet_name}'!A1" # Appends to the first available row
 
-# --- Zoom API Helper Functions ---
+    body = {
+        'values': [data]
+    }
+    try:
+        result = sheets_service.spreadsheets().values().append(
+            spreadsheetId=SPREADSHEET_ID,
+            range=range_name,
+            valueInputOption='USER_ENTERED',
+            body=body
+        ).execute()
+        # print(f"Logged to {sheet_name}: {data}") # Uncomment for verbose logging
+    except HttpError as e:
+        print(f"Failed to log to Google Sheet '{sheet_name}': {e}")
+        print("Please check if the service account has editor access to the spreadsheet.")
+    except Exception as e:
+        print(f"An unexpected error occurred while logging to Google Sheet '{sheet_name}': {e}")
+
+
+# --- Zoom API Helper Functions (No changes needed here for logging) ---
 
 def get_access_token(account_config):
     """
@@ -92,9 +132,7 @@ def get_access_token(account_config):
         token_data = response.json()
         return token_data.get("access_token")
     except requests.exceptions.RequestException as e:
-        failure_logger.error(
-            f"Failed to get access token for account '{account_config['name']}': {e}"
-        )
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "ERROR", f"Failed to get access token for account '{account_config['name']}': {e}"])
         return None
 
 def get_meeting_recordings(meeting_id, access_token, account_name):
@@ -114,39 +152,30 @@ def get_meeting_recordings(meeting_id, access_token, account_name):
         recording_data = response.json()
 
         if recording_data.get("recording_files"):
+            # Prioritize MP4 files explicitly
             for record_file in recording_data["recording_files"]:
                 if record_file["file_type"] == "MP4" and record_file["file_extension"] == "MP4":
                     return record_file["download_url"]
+            # Fallback to any download_url if no MP4 is found
             for record_file in recording_data["recording_files"]:
                 if record_file.get("download_url"):
                     return record_file["download_url"]
         return None
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 404:
-            failure_logger.warning(
-                f"Meeting ID {meeting_id} not found or no recordings for account '{account_name}'. "
-                f"Error: {e.response.status_code} - {e.response.text}"
-            )
+            log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "WARNING", f"Meeting ID {meeting_id} not found or no recordings for account '{account_name}'. Error: {e.response.status_code} - {e.response.text}"])
         elif e.response.status_code == 401:
-            failure_logger.error(
-                f"Unauthorized access for Meeting ID {meeting_id} using account '{account_name}'. "
-                f"Access token might be expired or invalid. Error: {e.response.status_code} - {e.response.text}"
-            )
+            log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "ERROR", f"Unauthorized access for Meeting ID {meeting_id} using account '{account_name}'. Access token might be expired or invalid. Error: {e.response.status_code} - {e.response.text}"])
         else:
-            failure_logger.error(
-                f"API error fetching recordings for Meeting ID {meeting_id} with account '{account_name}': {e}"
-            )
+            log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "ERROR", f"API error fetching recordings for Meeting ID {meeting_id} with account '{account_name}': {e}"])
         return None
     except requests.exceptions.RequestException as e:
-        failure_logger.error(
-            f"Network error fetching recordings for Meeting ID {meeting_id} with account '{account_name}': {e}"
-        )
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "ERROR", f"Network error fetching recordings for Meeting ID {meeting_id} with account '{account_name}': {e}"])
         return None
 
 def download_file(url, destination_path, access_token, meeting_id, account_name):
     """
     Downloads a file from a given URL with authorization.
-    Individual progress bars removed for cleaner concurrent output.
     """
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -159,15 +188,10 @@ def download_file(url, destination_path, access_token, meeting_id, account_name)
                     if chunk:
                         f.write(chunk)
 
-        success_logger.info(
-            f"Successfully downloaded Meeting ID {meeting_id} to '{destination_path}' using account '{account_name}'."
-        )
+        log_to_google_sheet(SUCCESS_SHEET_NAME, [datetime.now().isoformat(), "INFO", f"Successfully downloaded Meeting ID {meeting_id} to '{destination_path}' using account '{account_name}'."])
         return True
     except requests.exceptions.RequestException as e:
-        failure_logger.error(
-            f"Failed to download Meeting ID {meeting_id} from URL '{url}' to '{destination_path}' "
-            f"using account '{account_name}': {e}"
-        )
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "ERROR", f"Failed to download Meeting ID {meeting_id} from URL '{url}' to '{destination_path}' using account '{account_name}': {e}"])
         return False
 
 # --- Main Processing Logic ---
@@ -186,10 +210,7 @@ def process_meeting_download(meeting_entry):
     output_path = os.path.join(DOWNLOAD_DIR, desired_filename)
 
     if os.path.exists(output_path):
-        success_logger.info(
-            f"Skipping Meeting ID {meeting_id}: File '{output_path}' already exists."
-        )
-        # print(f"Skipping {desired_filename}: Already exists.") # Removed for cleaner output
+        log_to_google_sheet(SUCCESS_SHEET_NAME, [datetime.now().isoformat(), "INFO", f"Skipping Meeting ID {meeting_id}: File '{output_path}' already exists."])
         return
 
     found_download_url = None
@@ -198,7 +219,6 @@ def process_meeting_download(meeting_entry):
 
     for account_config in ZOOM_ACCOUNTS_CONFIG:
         account_name = account_config["name"]
-        # print(f"Attempting to find meeting {meeting_id} with {account_name}...") # Removed for cleaner output
         current_access_token = get_access_token(account_config)
 
         if current_access_token:
@@ -207,35 +227,88 @@ def process_meeting_download(meeting_entry):
                 found_download_url = download_url
                 used_account_name = account_name
                 break
-        # else: # Removed for cleaner output
-            # print(f"Could not get access token for {account_name}.")
-
 
     if found_download_url:
-        # print(f"Initiating download for {desired_filename} using {used_account_name}...") # Removed for cleaner output
         download_success = download_file(
             found_download_url, output_path, current_access_token, meeting_id, used_account_name
         )
         if not download_success:
-            # print(f"Download failed for {desired_filename}. Check {FAILURE_LOG} for details.") # Removed for cleaner output
-            pass # Error already logged
+            # Error already logged in download_file
+            pass
     else:
-        # print(f"Could not find a downloadable recording for Meeting ID {meeting_id} after trying all configured accounts.") # Removed for cleaner output
-        failure_logger.error(
-            f"Could not find a downloadable recording for Meeting ID {meeting_id} after trying all configured accounts."
-        )
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "ERROR", f"Could not find a downloadable recording for Meeting ID {meeting_id} after trying all configured accounts."])
 
 # --- Main Execution ---
 
 def main():
     print("Starting Zoom meeting download script...")
     print(f"Downloads will be saved to: {DOWNLOAD_DIR}")
-    print(f"Success logs: {SUCCESS_LOG}")
-    print(f"Failure logs: {FAILURE_LOG}")
+    print("Logs will be written to Google Sheets.")
     print("-" * 50)
 
+    if not initialize_sheets_service():
+        print("Script cannot proceed without Google Sheets service. Exiting.")
+        return
+
+    # Create initial headers for the sheets if they don't exist (optional, but good practice)
+    # You might want to run this once manually or check for existing headers in your script
+    try:
+        # Check if Success Log sheet exists and has headers
+        sheet_metadata = sheets_service.spreadsheets().get(spreadsheetId=SPREADSHEET_ID).execute()
+        sheets = sheet_metadata.get('sheets', '')
+        success_sheet_exists = any(s['properties']['title'] == SUCCESS_SHEET_NAME for s in sheets)
+        failure_sheet_exists = any(s['properties']['title'] == FAILURE_SHEET_NAME for s in sheets)
+
+        if not success_sheet_exists:
+             # Create the sheet if it doesn't exist
+            batch_update_body = {
+                'requests': [{
+                    'addSheet': {
+                        'properties': {
+                            'title': SUCCESS_SHEET_NAME
+                        }
+                    }
+                }]
+            }
+            sheets_service.spreadsheets().batchUpdate(
+                spreadsheetId=SPREADSHEET_ID, body=batch_update_body).execute()
+            log_to_google_sheet(SUCCESS_SHEET_NAME, ["Timestamp", "Level", "Message"])
+        else:
+             # Check if headers exist, if not, append them
+             result = sheets_service.spreadsheets().values().get(
+                spreadsheetId=SPREADSHEET_ID, range=f"'{SUCCESS_SHEET_NAME}'!A1:C1").execute()
+             values = result.get('values', [])
+             if not values or values[0] != ["Timestamp", "Level", "Message"]:
+                 log_to_google_sheet(SUCCESS_SHEET_NAME, ["Timestamp", "Level", "Message"])
+
+        if not failure_sheet_exists:
+            batch_update_body = {
+                'requests': [{
+                    'addSheet': {
+                        'properties': {
+                            'title': FAILURE_SHEET_NAME
+                        }
+                    }
+                }]
+            }
+            sheets_service.spreadsheets().batchUpdate(
+                spreadsheetId=SPREADSHEET_ID, body=batch_update_body).execute()
+            log_to_google_sheet(FAILURE_SHEET_NAME, ["Timestamp", "Level", "Message"])
+        else:
+            result = sheets_service.spreadsheets().values().get(
+                spreadsheetId=SPREADSHEET_ID, range=f"'{FAILURE_SHEET_NAME}'!A1:C1").execute()
+            values = result.get('values', [])
+            if not values or values[0] != ["Timestamp", "Level", "Message"]:
+                log_to_google_sheet(FAILURE_SHEET_NAME, ["Timestamp", "Level", "Message"])
+
+    except Exception as e:
+        print(f"Could not set up Google Sheet headers or create sheets: {e}")
+        print("Please ensure the service account has appropriate permissions and the spreadsheet ID is correct.")
+        return
+
+
     if not ZOOM_ACCOUNTS_CONFIG:
-        failure_logger.critical("No Zoom accounts configured. Please set up ZOOM_ACCOUNT_X_ACCOUNT_ID, ZOOM_ACCOUNT_X_CLIENT_ID, and ZOOM_ACCOUNT_X_CLIENT_SECRET in your .env file.")
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "CRITICAL", "No Zoom accounts configured. Please set up ZOOM_ACCOUNT_X_ACCOUNT_ID, ZOOM_ACCOUNT_X_CLIENT_ID, and ZOOM_ACCOUNT_X_CLIENT_SECRET in your .env file."])
         print("Script cannot proceed without Zoom account configurations. Exiting.")
         return
 
@@ -243,8 +316,8 @@ def main():
     try:
         with open(CSV_FILE, mode="r", newline="", encoding="utf-8") as file:
             reader = csv.DictReader(file)
-            expected_headers = ["Meeting ID", "Vimeo URI", "File Name"] # Using original expected headers
-            
+            expected_headers = ["Meeting ID", "Vimeo URI", "File Name"]
+
             if not all(header in reader.fieldnames for header in expected_headers):
                 raise ValueError(
                     f"CSV must contain all required columns: {', '.join(expected_headers)}. "
@@ -255,20 +328,20 @@ def main():
                 meetings_to_download.append(
                     {
                         "meeting_id": row["Meeting ID"].strip(),
-                        "vimeo_uri": row["Vimeo URI"].strip(), # Still reading, but not used for Zoom download
+                        "vimeo_uri": row["Vimeo URI"].strip(),
                         "desired_filename": row["File Name"].strip(),
                     }
                 )
     except FileNotFoundError:
-        failure_logger.critical(f"CSV file '{CSV_FILE}' not found. Please create it with columns: {', '.join(expected_headers)}.")
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "CRITICAL", f"CSV file '{CSV_FILE}' not found. Please create it with columns: {', '.join(expected_headers)}."])
         print(f"Error: CSV file '{CSV_FILE}' not found. Exiting.")
         return
     except ValueError as e:
-        failure_logger.critical(f"Error with CSV file '{CSV_FILE}': {e}")
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "CRITICAL", f"Error with CSV file '{CSV_FILE}': {e}"])
         print(f"Error with CSV file: {e}. Exiting.")
         return
     except Exception as e:
-        failure_logger.critical(f"Error reading CSV file '{CSV_FILE}': {e}")
+        log_to_google_sheet(FAILURE_SHEET_NAME, [datetime.now().isoformat(), "CRITICAL", f"An unexpected error occurred while reading CSV: {e}. Exiting."])
         print(f"An unexpected error occurred while reading CSV: {e}. Exiting.")
         return
 
@@ -282,14 +355,13 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         list(tqdm(executor.map(process_meeting_download, meetings_to_download),
                     total=len(meetings_to_download),
-                    desc="Processing Meetings", # More general description
+                    desc="Processing Meetings",
                     unit="meeting",
                     ncols=100))
 
     print("\n" + "-" * 50)
     print("All download tasks completed or attempted.")
-    print(f"Check success log: {SUCCESS_LOG} for successfully downloaded files.")
-    print(f"Check failure log: {FAILURE_LOG} for any issues or skipped meetings.")
+    print(f"Check your Google Sheet '{SPREADSHEET_ID}' for success and failure logs.")
     print("-" * 50)
 
 
