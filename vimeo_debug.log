@@ -1,0 +1,200 @@
+2025-06-11 12:21:11,915 - DEBUG - 
+--- Processing 'AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4' ---
+2025-06-11 12:21:11,915 - DEBUG - 
+--- Processing 'AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4' ---
+2025-06-11 12:21:11,915 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613272'
+2025-06-11 12:21:11,915 - DEBUG - 
+--- Processing 'AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4' ---
+2025-06-11 12:21:11,915 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613274'
+2025-06-11 12:21:11,915 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B724-T4-7Jun2025-ILL-W44.mp4'
+2025-06-11 12:21:11,916 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613277'
+2025-06-11 12:21:11,916 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B724-T4-8Jun2025-ILL-W44.mp4'
+2025-06-11 12:21:11,916 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:21:11,916 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B824-T3-7Jun2025-ILL-W38.mp4'
+2025-06-11 12:21:11,917 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:21:11,917 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272' (Type: <class 'str'>)
+2025-06-11 12:21:11,917 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:21:11,917 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274' (Type: <class 'str'>)
+2025-06-11 12:21:11,918 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613272
+2025-06-11 12:21:11,918 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277' (Type: <class 'str'>)
+2025-06-11 12:21:11,919 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613274
+2025-06-11 12:21:11,919 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613272', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:21:11,920 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613277
+2025-06-11 12:21:11,920 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613274', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:21:11,921 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613277', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:21:40,662 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613277/videos/1092438719
+2025-06-11 12:21:40,662 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092438719
+2025-06-11 12:21:41,163 - DEBUG - 
+--- Processing 'AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4' ---
+2025-06-11 12:21:41,164 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613278'
+2025-06-11 12:21:41,164 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B824-T3-8Jun2025-ILL-W38.mp4'
+2025-06-11 12:21:41,164 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:21:41,164 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278' (Type: <class 'str'>)
+2025-06-11 12:21:41,164 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613278
+2025-06-11 12:21:41,164 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613278', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:21:44,353 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613272/videos/1092438728
+2025-06-11 12:21:44,353 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092438728
+2025-06-11 12:21:44,838 - DEBUG - 
+--- Processing 'AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4' ---
+2025-06-11 12:21:44,839 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613272'
+2025-06-11 12:21:44,839 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B1024-T3-7Jun2025-ILL-W31.mp4'
+2025-06-11 12:21:44,839 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:21:44,839 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272' (Type: <class 'str'>)
+2025-06-11 12:21:44,839 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613272
+2025-06-11 12:21:44,839 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613272', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:21:51,335 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613274/videos/1092438720
+2025-06-11 12:21:51,335 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092438720
+2025-06-11 12:21:51,771 - DEBUG - 
+--- Processing 'AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4' ---
+2025-06-11 12:21:51,771 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613274'
+2025-06-11 12:21:51,771 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B1024-T3-8Jun2025-ILL-W31.mp4'
+2025-06-11 12:21:51,772 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:21:51,772 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274' (Type: <class 'str'>)
+2025-06-11 12:21:51,772 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613274
+2025-06-11 12:21:51,772 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613274', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:22:07,206 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613278/videos/1092438845
+2025-06-11 12:22:07,206 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092438845
+2025-06-11 12:22:07,713 - DEBUG - 
+--- Processing 'AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4' ---
+2025-06-11 12:22:07,714 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613277'
+2025-06-11 12:22:07,714 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B1124-T3-7Jun2025-ILL-W28.mp4'
+2025-06-11 12:22:07,714 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:22:07,714 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277' (Type: <class 'str'>)
+2025-06-11 12:22:07,714 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613277
+2025-06-11 12:22:07,714 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613277', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:22:14,312 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613272/videos/1092438866
+2025-06-11 12:22:14,312 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092438866
+2025-06-11 12:22:14,757 - DEBUG - 
+--- Processing 'AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4' ---
+2025-06-11 12:22:14,757 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613278'
+2025-06-11 12:22:14,757 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B1124-T3-8Jun2025-ILL-W28.mp4'
+2025-06-11 12:22:14,757 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:22:14,757 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278' (Type: <class 'str'>)
+2025-06-11 12:22:14,758 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613278
+2025-06-11 12:22:14,758 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613278', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:22:17,165 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613274/videos/1092438892
+2025-06-11 12:22:17,165 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092438892
+2025-06-11 12:22:17,642 - DEBUG - 
+--- Processing 'AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4' ---
+2025-06-11 12:22:17,643 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613272'
+2025-06-11 12:22:17,643 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B1224-T2-7Jun2025-ILL-W23.mp4'
+2025-06-11 12:22:17,643 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:22:17,643 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272' (Type: <class 'str'>)
+2025-06-11 12:22:17,643 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613272
+2025-06-11 12:22:17,643 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613272', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:22:39,303 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613277/videos/1092438971
+2025-06-11 12:22:39,303 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092438971
+2025-06-11 12:22:39,807 - DEBUG - 
+--- Processing 'AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4' ---
+2025-06-11 12:22:39,807 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613274'
+2025-06-11 12:22:39,807 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B1224-T2-8Jun2025-ILL-W23.mp4'
+2025-06-11 12:22:39,807 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:22:39,807 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274' (Type: <class 'str'>)
+2025-06-11 12:22:39,807 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613274
+2025-06-11 12:22:39,807 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613274', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:22:47,642 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613272/videos/1092439029
+2025-06-11 12:22:47,642 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092439029
+2025-06-11 12:22:48,094 - DEBUG - 
+--- Processing 'AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4' ---
+2025-06-11 12:22:48,094 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613277'
+2025-06-11 12:22:48,094 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B125-T2-7Jun2025-ILL-W19.mp4'
+2025-06-11 12:22:48,095 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:22:48,095 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277' (Type: <class 'str'>)
+2025-06-11 12:22:48,095 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613277
+2025-06-11 12:22:48,095 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613277', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:22:56,319 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613278/videos/1092439006
+2025-06-11 12:22:56,319 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092439006
+2025-06-11 12:22:56,798 - DEBUG - 
+--- Processing 'AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4' ---
+2025-06-11 12:22:56,798 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613278'
+2025-06-11 12:22:56,798 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B125-T2-8Jun2025-ILL-W19.mp4'
+2025-06-11 12:22:56,798 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:22:56,798 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278' (Type: <class 'str'>)
+2025-06-11 12:22:56,798 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613278
+2025-06-11 12:22:56,798 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613278', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:23:09,367 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613274/videos/1092439119
+2025-06-11 12:23:09,367 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092439119
+2025-06-11 12:23:09,855 - DEBUG - 
+--- Processing 'AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4' ---
+2025-06-11 12:23:09,855 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613272'
+2025-06-11 12:23:09,855 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B225-T2-7Jun2025-ILL-W15.mp4'
+2025-06-11 12:23:09,855 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:23:09,855 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272' (Type: <class 'str'>)
+2025-06-11 12:23:09,855 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613272
+2025-06-11 12:23:09,855 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613272', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:23:23,856 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613277/videos/1092439155
+2025-06-11 12:23:23,856 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092439155
+2025-06-11 12:23:24,360 - DEBUG - 
+--- Processing 'AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4' ---
+2025-06-11 12:23:24,360 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613274'
+2025-06-11 12:23:24,360 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B225-T2-8Jun2025-ILL-W15.mp4'
+2025-06-11 12:23:24,360 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:23:24,360 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274' (Type: <class 'str'>)
+2025-06-11 12:23:24,360 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613274
+2025-06-11 12:23:24,360 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613274', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:23:25,514 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613272/videos/1092439252
+2025-06-11 12:23:25,514 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092439252
+2025-06-11 12:23:25,955 - DEBUG - 
+--- Processing 'AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4' ---
+2025-06-11 12:23:25,955 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613277'
+2025-06-11 12:23:25,955 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B325-T1-7Jun2025-ILL-W11.mp4'
+2025-06-11 12:23:25,955 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:23:25,956 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277' (Type: <class 'str'>)
+2025-06-11 12:23:25,956 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613277
+2025-06-11 12:23:25,956 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613277', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:23:33,794 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613278/videos/1092439199
+2025-06-11 12:23:33,794 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092439199
+2025-06-11 12:23:34,274 - DEBUG - 
+--- Processing 'AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4' ---
+2025-06-11 12:23:34,274 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613278'
+2025-06-11 12:23:34,274 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B325-T1-8Jun2025-ILL-W11.mp4'
+2025-06-11 12:23:34,274 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:23:34,274 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278' (Type: <class 'str'>)
+2025-06-11 12:23:34,274 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613278
+2025-06-11 12:23:34,274 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613278', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:23:42,745 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613274/videos/1092439323
+2025-06-11 12:23:42,745 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092439323
+2025-06-11 12:23:43,232 - DEBUG - 
+--- Processing 'AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4' ---
+2025-06-11 12:23:43,232 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613272'
+2025-06-11 12:23:43,232 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B425-T1-7Jun2025-ILL-W7.mp4'
+2025-06-11 12:23:43,232 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:23:43,232 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613272' (Type: <class 'str'>)
+2025-06-11 12:23:43,232 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613272
+2025-06-11 12:23:43,232 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613272', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:23:43,781 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613277/videos/1092439328
+2025-06-11 12:23:43,782 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092439328
+2025-06-11 12:23:44,249 - DEBUG - 
+--- Processing 'AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4' ---
+2025-06-11 12:23:44,249 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613274'
+2025-06-11 12:23:44,249 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B425-T1-8Jun2025-ILL-W7.mp4'
+2025-06-11 12:23:44,250 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:23:44,250 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613274' (Type: <class 'str'>)
+2025-06-11 12:23:44,250 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613274
+2025-06-11 12:23:44,250 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613274', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:24:08,614 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613274/videos/1092439412
+2025-06-11 12:24:08,614 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613274/videos/1092439412
+2025-06-11 12:24:09,088 - DEBUG - 
+--- Processing 'AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4' ---
+2025-06-11 12:24:09,088 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613277'
+2025-06-11 12:24:09,089 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B525-T1-7Jun2025-ILL-W3.mp4'
+2025-06-11 12:24:09,089 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:24:09,089 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613277' (Type: <class 'str'>)
+2025-06-11 12:24:09,089 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613277
+2025-06-11 12:24:09,089 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613277', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:24:09,132 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613272/videos/1092439406
+2025-06-11 12:24:09,132 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613272/videos/1092439406
+2025-06-11 12:24:09,617 - DEBUG - 
+--- Processing 'AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4' ---
+2025-06-11 12:24:09,617 - DEBUG -   Vimeo URI from CSV (RAW): '/users/230692899/projects/25613278'
+2025-06-11 12:24:09,617 - DEBUG -   Constructed local_file_path: 'zoom_downloads/AOLTEMG-B525-T1-8Jun2025-ILL-W3.mp4'
+2025-06-11 12:24:09,617 - DEBUG -   Does file exist at this path? True
+2025-06-11 12:24:09,617 - DEBUG - extract_vimeo_folder_info_from_uri called with URI: '/users/230692899/projects/25613278' (Type: <class 'str'>)
+2025-06-11 12:24:09,618 - DEBUG - Matched API URI pattern. Context Type: users, Context ID: 230692899, Folder Type: projects, Folder ID: 25613278
+2025-06-11 12:24:09,618 - DEBUG - Result of extract_vimeo_folder_info_from_uri: Folder ID: '25613278', User ID: '230692899', Team ID: 'None'
+2025-06-11 12:24:11,219 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613278/videos/1092439366
+2025-06-11 12:24:11,219 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092439366
+2025-06-11 12:24:29,587 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613278/videos/1092439549
+2025-06-11 12:24:29,587 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613278/videos/1092439549
+2025-06-11 12:24:37,387 - DEBUG - Constructed user-specific project path: /users/230692899/projects/25613277/videos/1092439546
+2025-06-11 12:24:37,387 - DEBUG - Attempting PUT request to add video to folder: /users/230692899/projects/25613277/videos/1092439546

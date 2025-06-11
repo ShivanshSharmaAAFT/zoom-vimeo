@@ -1,0 +1,11 @@
+requests
+concurrent.futures
+json
+os
+csv
+logging
+base64
+datetime
+time
+dotenv
+tqdm
