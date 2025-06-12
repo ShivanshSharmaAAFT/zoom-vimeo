@@ -1,0 +1,31 @@
+# --- Sensitive Files ---
+.env               # Contains API keys, tokens, etc. (like VIMEO_ACCESS_TOKEN)
+credentials.json   # Specifically mentioned in your GitHub error (Google Cloud credentials)
+
+# --- Python Specific Files ---
+__pycache__/       # Python bytecode cache directory
+*.pyc              # Compiled Python files
+.python-version    # Version manager like pyenv
+.venv/             # Virtual environment directory (common name)
+venv/              # Virtual environment directory (common name, your's is venv_zoom_vimeo, but catch all common names)
+env/               # Another common name for virtual environment
+pip-log.txt        # pip log file
+
+# --- Project-Specific Generated Files/Directories ---
+*.log              # All .log files (e.g., vimeo_success.log, vimeo_failure.log, vimeo_debug.log)
+zoom_downloads/    # Your download directory, which can contain large video files
+
+# --- Operating System Specific Files ---
+.DS_Store          # macOS specific file
+Thumbs.db          # Windows specific file
+
+# --- IDE and Editor Specific Files ---
+.idea/             # IntelliJ IDEA specific files
+.vscode/           # VS Code specific files (if you want to ignore workspace settings)
+*.swp              # Vim swap files
+*~                 # Backup files created by some editors
+
+# --- Others (add as needed) ---
+*.zip              # Zipped archives
+*.tar.gz           # Tar archives
+*.bak              # Backup files
